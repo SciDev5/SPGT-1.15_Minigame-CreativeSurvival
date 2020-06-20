@@ -1,0 +1,17 @@
+gameworlds:
+   - cs_001
+worlddata:
+   cs_001:
+      buildRadius: 8
+      baseMaterials:
+      - "LIME_STAINED_GLASS"
+      - "RED_STAINED_GLASS"
+      basePoses:
+      - "16,64,0"
+      - "-16,64,0"
+      spawn:
+         protection: 16
+         location:
+            x: 0
+            y: 140
+            z: 0

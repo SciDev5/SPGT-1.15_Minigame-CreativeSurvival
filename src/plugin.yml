@@ -1,0 +1,29 @@
+name: CreativeSurvivalMinigame
+version: 0.0.0
+author: UUT118
+main: me.uut118.creativesurvival.PluginMain
+api-version: 1.15
+commands:
+   wtp:
+      description: tp to a world lol.
+   begingame_mcs:
+      description: start a game of creative survival.
+   endgame_mcs:
+      description: end a game of creative survival prematurely.
+   joingame_mcs:
+      description: join a game of creative survival.
+   modifygame_mcs: 
+      description: modify a creativesurvival game.
+permissions:
+   creativeSurvivalMinigame.*:
+      children:
+         creativeSurvivalMinigame.duringGame.modifyOutOfBounds: true
+         creativeSurvivalMinigame.commands.beginGame.use: true
+         creativeSurvivalMinigame.commands.endGame.use: true
+         creativeSurvivalMinigame.modifyGame: true
+   creativeSurvivalMinigame.commands.beginGame.use: 
+      default: true
+   creativeSurvivalMinigame.commands.endGame.use: 
+      default: op
+   creativeSurvivalMinigame.modifyGame: 
+      default: op
